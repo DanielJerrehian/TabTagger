@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./popup.css" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+  <div class="navbar-fixed">
+    <nav>
+      <div class="nav-wrapper">
+        <div class="title">
+          <h1 class="center-align">TabTagger</h1>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+  <div class="container-vertical">
+    <p class="description">Easily manage your tab titles with TabTagger. Enter a new title in the input field for any
+      open tab to update it instantly, click on the tab icon or URL to switch to it.</p>
+    <ul class="collection">
+    </ul>
+  </div>
+
+  <template id="tab-list">
+    <li class="collection-item avatar">
+      <div class="content-wrapper">
+        <i class="material-icons circle blue" style="top: 20px;"></i>
+        <div class="text-wrapper">
+          <span class="title truncate">
+            <input type="text" id="title-input" class="title-input truncate">
+          </span>
+          <p class="url truncate">Tab URL</p>
+        </div>
+      </div>
+    </li>
+  </template>
+
+  <script src="./popup.js" type="module"></script>
+</body>
+
+</html>
