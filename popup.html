@@ -6,8 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="./popup.css" />
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
 </head>
 
 <body>
@@ -15,26 +15,38 @@
     <nav>
       <div class="nav-wrapper">
         <div class="title">
-          <h1 class="center-align">TabTagger</h1>
+          <h1 class="center-align" class="title-text">TabTagger</h1>
+          <img src="images/TabTaggerLogo16.png" class="logo" />
         </div>
       </div>
     </nav>
   </div>
 
   <div class="container-vertical">
-    <p class="description">Easily manage your tab titles with TabTagger. Enter a new title in the input field for any
-      open tab to update it instantly, click on the tab icon or URL to switch to it.</p>
-    <ul class="collection">
-    </ul>
+    <p class="description">
+      Easily manage your tab titles with TabTagger. Enter a new title in the
+      input field for any open tab to update it instantly, click on the tab
+      icon or URL to switch to it.
+    </p>
+    <ul class="collection"></ul>
+    <footer class="footer">
+      <div class="container-vertical">
+        <a href="https://www.petasittek.com/volume-master/pay-what-you-like/" target="_blank"
+          class="center-align donation">
+          Pay what you'd like
+        </a>
+        <p class="copyright-text center-align"></p>
+      </div>
+    </footer>
   </div>
 
   <template id="tab-list">
     <li class="collection-item avatar">
       <div class="content-wrapper">
-        <i class="material-icons circle blue" style="top: 20px;"></i>
+        <i class="material-icons circle blue" style="top: 20px"></i>
         <div class="text-wrapper">
           <span class="title truncate">
-            <input type="text" id="title-input" class="title-input truncate">
+            <input type="text" id="title-input" class="title-input truncate" />
           </span>
           <p class="url truncate">Tab URL</p>
         </div>

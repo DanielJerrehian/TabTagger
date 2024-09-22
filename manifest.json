@@ -1,22 +1,22 @@
 {
     "manifest_version": 3,
     "name": "TabTagger",
-    "description": "Rename your tabs with ease",
-    "version": "1.0",
+    "description": "Enter a new title in the input field for any open tab to update it instantly, click on the tab icon or URL to switch to it.",
+    "version": "0.0.0.1",
     "permissions": [
         "tabs",
         "scripting"
     ],
+    "icons": {
+        "16": "images/TabTaggerLogo16.png",
+        "32": "images/TabTaggerLogo32.png",
+        "48": "images/TabTaggerLogo48.png",
+        "128": "images/TabTaggerLogo128.png"
+    },
     "host_permissions": [
         "<all_urls>"
     ],
     "action": {
-        "default_icon": {
-            "16": "images/icon.png",
-            "32": "images/icon.png",
-            "48": "images/icon.png",
-            "128": "images/icon.png"
-        },
         "default_popup": "popup.html"
     },
     "commands": {

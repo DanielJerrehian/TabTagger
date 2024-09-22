@@ -44,9 +44,10 @@ for (const tab of tabs) {
         await chrome.windows.update(tab.windowId, { focused: true });
     });
 
-
-
     elements.add(element);
 }
 
 document.querySelector("ul").append(...elements);
+
+const copyrightText = document.querySelector(".copyright-text");
+copyrightText.textContent = `TabTagger \u00AE ${new Date().getFullYear()}`;
