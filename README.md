@@ -1,6 +1,8 @@
 # TabTagger
 Easily manage your tab titles with TabTagger. Enter a new title in the input field for any open tab to update it instantly, click on the tab icon or URL to switch to it.
 
+![Alt text](/TabTaggerExampleScreenshot.png?raw=true)
+
 ## Code
 The code is broken down into 4 main files:
 - manifest.json 
