@@ -4,8 +4,7 @@
     "description": "Enter a new title in the input field for any open tab to update it instantly, click on the tab icon or URL to switch to it.",
     "version": "0.0.0.1",
     "permissions": [
-        "tabs",
-        "scripting"
+        "tabs"
     ],
     "icons": {
         "16": "images/TabTaggerLogo16.png",
@@ -18,13 +17,5 @@
     ],
     "action": {
         "default_popup": "popup.html"
-    },
-    "commands": {
-        "_execute_action": {
-            "suggested_key": {
-                "default": "Ctrl+B",
-                "mac": "Command+B"
-            }
-        }
     }
 }
